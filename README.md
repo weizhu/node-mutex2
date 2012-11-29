@@ -8,6 +8,8 @@ Even though Nodes run inside a single threaded environment, there is still a nee
 Samples when used with node-sync module
 -----------
 ```javascript
+var Sync = require('sync');
+var mutex = require('mutex2/sync');
 
 var m = new mutex.SyncMutex();
 Sync(function() {
@@ -19,6 +21,9 @@ Sync(function() {
 
 
 ```javascript
+  var Sync = require('sync');
+  var mutex = require('mutex2/sync');
+
   var m = new mutex.SyncMutex();
   var s = 'step: ';
   
@@ -44,6 +49,7 @@ Samples without using node-sync module
 -----------
 
 ```javascript
+  var mutex = require('mutex2');
   var m = new mutex.Mutex();
   m.lock(null, function() {
     console.log('do task');
@@ -53,6 +59,7 @@ Samples without using node-sync module
 ```
 
 ```javascript
+  var mutex = require('mutex2');
   var m = new mutex.Mutex();
   var s = 'step: ';
   

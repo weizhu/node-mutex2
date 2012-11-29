@@ -1,4 +1,3 @@
-var Sync = require('sync');
 var mutex = require('mutex2');
 
 exports.testBasic = function(test) {
