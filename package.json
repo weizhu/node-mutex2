@@ -1,0 +1,17 @@
+{
+  "name": "mutex2",
+  "description": "Simple mutex class",
+  "keywords": [
+    "mutex", "fiber", "fibers", "thread", "async", "parallel", "future", "promise"],
+  "version": "v0.0.1",
+  "url": "https://github.com/weizhu/node-mutex2",
+  "author": "Wei Zhu <wei@weiandfenny.com>",
+  "main": "lib/mutex",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/weizhu/node-mutex2.git"
+  },
+  "engines": {
+    "node": ">=0.4.5"
+  }
+}
